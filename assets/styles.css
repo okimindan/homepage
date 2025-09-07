@@ -1,0 +1,34 @@
+:root{
+  --bg:#f7f7f8;
+  --text:#1f2328;
+  --muted:#6b7280;
+  --primary:#4caf50;
+  --surface:#ffffff;
+  --border:#e5e7eb;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Noto Sans JP",sans-serif;
+  line-height:1.6;
+}
+.container{max-width:960px;margin:0 auto;padding:16px;}
+.site-header{background:var(--primary);color:#fff;}
+.header-inner{display:flex;align-items:center;justify-content:space-between;}
+.brand-link{color:#fff;text-decoration:none;font-weight:700;letter-spacing:.03em;}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:8px;}
+.nav a{display:inline-block;padding:10px 12px;text-decoration:none;color:#fff;border-radius:10px;transition:background .2s ease;}
+.nav a:hover{background:rgba(255,255,255,.15);}
+.nav a.active{background:#fff;color:#1a1a1a;}
+.main-content{padding-block:24px 80px;}
+h1,h2,h3{line-height:1.35}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px;margin:16px 0;box-shadow:0 1px 2px rgba(0,0,0,.04);}
+label{display:block;margin:10px 0;font-weight:600;}
+input[type="text"],input[type="email"],textarea{width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:10px;font:inherit;}
+button,.button{display:inline-block;padding:10px 14px;background:var(--primary);color:#fff;border:none;border-radius:10px;font-weight:600;cursor:pointer;text-decoration:none;}
+button:hover,.button:hover{filter:brightness(0.95);}
+.site-footer{position:fixed;bottom:0;left:0;width:100%;background:#111827;color:#e5e7eb;border-top:1px solid #000;}
+.site-footer .container{padding:10px 16px;text-align:center;}
+@media (max-width:600px){.nav ul{flex-wrap:wrap}}
